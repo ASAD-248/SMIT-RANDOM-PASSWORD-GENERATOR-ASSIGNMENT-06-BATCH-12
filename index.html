@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0
+,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1
+,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <section>
+        <div class="main-container">
+            <div class="title">
+                <h1>Random Password Generator</h1>
+                <p>Create strong and secure passwords to keep your account safe online.</p>
+            </div>
+            <div class="column">
+                <div class="left-image">
+                    <img src="./assests/download.svg" alt="">
+                </div>
+                <div class="right">
+                    <div class="inp-row">
+                      <form action=""> <input id="inputBox" type="text" ><span id="pass_lable">Very strong</span>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </form>
+                      <button onclick="copyBtn()" class="copy-btn">Copy</button>
+                    </div>
+
+                    <div class="pass-lenght-wrap">
+                        <div class="text-wrap">
+                            <p>Password length: </p><span id="sliderValue" onchange="strong()" class="password-lenght-quantity"></span>
+                        </div>
+                        <div class="btn-wrap">
+                            <button onclick="minus_Btn()" class="miness-btn">-</button> 
+                            <div class="progress-bar-outer">
+                                <input id="inputSlider"  class="password-rang"  type="range" min="1" max="50">
+                            </div>
+                            <button id="plusBtn" onclick="plus_Btn()" class="plus-btn">+</button>
+                            <button id="genBtn"></button>
+                        </div>
+                    </div>
+
+                    <div class="check-box-wrap">
+                        <div class="txt-check-wrap">
+                            <p>Characters used:</p>
+                        </div>
+                        <div class="check-box-wrap">
+                          <div class="box-label-wrap">  <input id="upperCase_check" class="check" type="checkbox"><label for="">ABC</label></div>
+                          <div class="box-label-wrap">   <input id="lowerCase_check" class="check"  type="checkbox"><label for="">abc</label></div>
+                          <div class="box-label-wrap">   <input id="numCheck" class="check" type="checkbox"><label for="">123</label></div>
+                          <div class="box-label-wrap">   <input id="symbole_check" class="check" type="checkbox"><label for="">#$&</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./app.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/1ac82f4868.js" crossorigin="anonymous"></script>
+</body>
+</html>

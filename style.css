@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Avenir Next World W05 Bold";
+  src: url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.eot");
+  src: url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.woff") format("woff"), url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/338a2dfd3322358222800514bb74247c.svg#Avenir Next World W05 Bold") format("svg");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 240, 240);
+}
+section .main-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2%;
+  align-items: center;
+  background: rgb(255, 241, 241);
+}
+section .main-container .title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+section .main-container .title h1 {
+  font-size: 3.7rem;
+  font-family: "Avenir Next World W05 Bold";
+}
+section .main-container .title p {
+  font-family: poppins;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section .main-container .column {
+  display: flex;
+  width: 100%;
+}
+section .main-container .column .left-image {
+  width: 65%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+section .main-container .column .right {
+  padding: 2%;
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section .main-container .column .right .inp-row {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+section .main-container .column .right .inp-row form {
+  border: 1px solid #0070f6;
+  border-color: #0070f6;
+  border-style: ridge;
+  width: 470px;
+  height: 56px;
+  border-radius: 60px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section .main-container .column .right .inp-row form input {
+  border: none;
+  background-color: none;
+  padding: 0px 0px 0px 10px;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 20px;
+}
+section .main-container .column .right .inp-row form input:focus {
+  outline: none;
+}
+section .main-container .column .right .inp-row form span {
+  background: rgb(154, 228, 55);
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: poppins;
+  color: black;
+  letter-spacing: 0.08cap;
+}
+section .main-container .column .right .inp-row form .fa-rotate-right {
+  margin-right: 13px;
+}
+section .main-container .column .right .inp-row .copy-btn {
+  margin-left: 20px;
+  border: none;
+  height: 50px;
+  width: 90px;
+  border-radius: 60px;
+  background: #0070f6;
+  color: white;
+  font-family: poppins;
+  font-weight: bold;
+}
+section .main-container .column .right .pass-lenght-wrap {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+section .main-container .column .right .pass-lenght-wrap .text-wrap {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+section .main-container .column .right .pass-lenght-wrap .text-wrap p {
+  font-family: poppins;
+  font-size: 20px;
+}
+section .main-container .column .right .pass-lenght-wrap .text-wrap .password-lenght-quantity {
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: bold;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .miness-btn {
+  border: 1px solid black;
+  outline: none;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .miness-btn:hover {
+  background: black;
+  color: rgb(147, 147, 147);
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .progress-bar-outer .password-rang {
+  width: 100%;
+  height: 15px;
+  transform: rotateX(3.142rad);
+  float: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid black;
+  width: 310px;
+  border-radius: 40px;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .progress-bar-outer .password-rang::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 43px;
+  width: 43px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #0070f6;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .plus-btn {
+  border: 1px solid black;
+  outline: none;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+section .main-container .column .right .pass-lenght-wrap .btn-wrap .plus-btn:hover {
+  background: black;
+  color: rgb(147, 147, 147);
+}
+section .main-container .column .right .check-box-wrap {
+  padding: 2%;
+  display: flex;
+  gap: 1rem;
+}
+section .main-container .column .right .check-box-wrap .txt-check-wrap {
+  align-items: center;
+  display: flex;
+}
+section .main-container .column .right .check-box-wrap .txt-check-wrap p {
+  font-family: poppins;
+  font-size: 20px;
+}
+section .main-container .column .right .check-box-wrap .check-box-wrap {
+  display: flex;
+  gap: 1rem;
+}
+section .main-container .column .right .check-box-wrap .check-box-wrap label {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 20px;
+}
+section .main-container .column .right .check-box-wrap .check-box-wrap .box-label-wrap {
+  padding: 5px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+section .main-container .column .right .check-box-wrap .check-box-wrap .box-label-wrap .check {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #0070f6;
+  border: 1px solid black;
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
