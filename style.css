@@ -25,7 +25,7 @@ section .main-container {
   height: max-content;
   padding: 2%;
   align-items: center;
-  background: rgb(255, 241, 241);
+
 }
 section .main-container .title {
   text-align: center;
